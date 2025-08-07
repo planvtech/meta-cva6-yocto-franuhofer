@@ -4,6 +4,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
   <remote name="openhwgroup" fetch="https://github.com/openhwgroup/" />
+  <remote name="gyroidos" fetch="https://github.com/gyroidos/" />
 
   <default revision="scarthgap"
            remote="yocto"
@@ -11,6 +12,6 @@
 
   <project path="poky" name="poky" />
   <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" />
-  <project name="meta-cva6-yocto" remote="openhwgroup" path="meta-cva6-yocto" />
+  <project name="meta-cva6-yocto" remote="gyroidos" path="meta-cva6-yocto" />
 
 </manifest>

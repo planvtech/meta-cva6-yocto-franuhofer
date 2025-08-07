@@ -32,7 +32,7 @@ PATH=${PATH}:~/bin
 ### Create workspace
 ```text
 mkdir cva6-yocto && cd cva6-yocto
-repo init -u https://github.com/openhwgroup/meta-cva6-yocto -b scarthgap -m tools/manifests/cva6-yocto.xml
+repo init -u https://github.com/gyroidos/meta-cva6-yocto -b scarthgap -m tools/manifests/cva6-yocto.xml
 repo sync
 repo start work --all
 ```

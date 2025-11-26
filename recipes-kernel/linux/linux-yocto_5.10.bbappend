@@ -9,18 +9,19 @@ SRC_URI = "git://github.com/openhwgroup/linux;protocol=https;branch=linux-5.10.y
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
-SRC_URI += "file://0001-cva6-genesys2-add-32-and-64-bits-dts.patch\
-            file://0002-cva6-agilex7-add-dts.patch \
-            file://0003-cva6-agilex7-uart.patch \
-            file://0005.patch"
 
-SRC_URI:append:cv32a6-genesys2 = " file://cv32a6-fragment.cfg \
+SRC_URI:append:cv32a6-genesys2 = " file://0001-cva6-genesys2-add-32-and-64-bits-dts.patch \
+                                   file://cv32a6-fragment.cfg \
                                    file://cv32a6/defconfig \
                                  "
-SRC_URI:append:cv64a6-genesys2 = " file://cv64a6/defconfig \
+SRC_URI:append:cv64a6-genesys2 = " file://0001-cva6-genesys2-add-32-and-64-bits-dts.patch \
+                                   file://cv64a6/defconfig \
                                  "
 SRC_URI:append:cv32a6-agilex7 = " file://cv32a6-fragment.cfg \
                                   file://cv32a6-agilex7/defconfig \
+                                  file://0002-cva6-agilex7-add-dts.patch \
+                                  file://0003-cva6-agilex7-uart.patch \
+                                  file://0004-cva6-agilex7-mmc.patch \
                                  "
 COMPATIBLE_MACHINE:append:cv64a6-genesys2 = "|cv64a6-genesys2"
 COMPATIBLE_MACHINE:append:cv32a6-genesys2 = "|cv32a6-genesys2"
